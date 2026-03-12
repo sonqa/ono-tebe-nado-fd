@@ -84,9 +84,12 @@ body {
 
 /* Адрес (третья колонка) */
 .address {
+    display: flex;
+    flex-direction: column;   /* колонка */
+    align-items: flex-start;  /* ← выравнивание по левому краю */
+    gap: 5px;                 /* расстояние между строками */
     font-style: normal;
-    text-align: right;
-    width: 240px;
+    text-align: left;         /* ← тоже по левому краю */
 }
 
 .address a,
