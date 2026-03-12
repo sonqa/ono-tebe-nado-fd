@@ -32,17 +32,19 @@ body {
 
 /* ===== ШАПКА ===== */
 .header {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
     width: 1100px;
     height: 293px;
     margin: 0 auto;
+    padding: 30px 50px;
     background-color: #ffffff;
 }
 
+/* Меню (первая колонка) */
 .header__menu {
-    position: absolute;
-    top: 133px;
-    left: 50px;
+    justify-self: start;  /* прижимаем меню влево */
 }
 
 .header__links-list {
@@ -67,10 +69,9 @@ body {
     text-underline-offset: 4px;
 }
 
+/* Логотип (вторая колонка) */
 .header__logo {
-    position: absolute;
-    top: 92px;
-    left: 478px;
+    justify-self: center;  /* центрируем логотип */
     width: 148px;
     height: 105px;
 }
@@ -81,14 +82,11 @@ body {
     object-fit: contain;
 }
 
-/* ===== АДРЕС (общий) ===== */
+/* Адрес (третья колонка) */
 .address {
-    position: absolute;
-    top: 95px;
-    left: 810px;
-    width: 240px;
-    height: 98px;
+    justify-self: end;     /* прижимаем адрес вправо */
     font-style: normal;
+    text-align: right;
 }
 
 .address a,
