@@ -64,13 +64,7 @@ body {
     text-decoration: underline;
 }
 .cover {
-    background-image: url('../images/cover.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 100px 50px;
-    text-align: center;
-    color: white; /* чтобы текст был виден на тёмном фоне */
+    background-color: red !important;
 }
 
 .cover__title {
