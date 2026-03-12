@@ -84,9 +84,9 @@ body {
 
 /* Адрес (третья колонка) */
 .address {
-    justify-self: end;     /* прижимаем адрес вправо */
     font-style: normal;
     text-align: right;
+    width: 240px;
 }
 
 .address a,
@@ -100,22 +100,19 @@ body {
     text-decoration: none;
 }
 
+.address a {
+    white-space: nowrap;
+}
+
+.address span {
+    margin-top: 4px;
+    white-space: normal;
+}
+
 .address a:hover {
     text-decoration: underline;
 }
 
-/* Позиционирование каждой строки */
-.address a:first-child {
-    margin-top: 0;
-}
-
-.address a:nth-child(2) {
-    margin-top: 0;  /* расстояние регулируется line-height */
-}
-
-.address span {
-    margin-top: 5px;  /* небольшой отступ перед адресом */
-}
 
 /* ===== ОБЛОЖКА ===== */
 .cover {
