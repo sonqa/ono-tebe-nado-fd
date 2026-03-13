@@ -156,19 +156,7 @@ body {
 .cover__title span {
     display: block;
 }
-.cover__title span:first-child {
-    display: block;
-    width: 286px;
-    height: 115px;
-    margin-top: 165px;
-    margin-left: 50px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 100px;
-    line-height: 1.15;        /* 115px */
-    letter-spacing: 0.3em;     /* 30% от 100px ≈ 30px */
-    text-transform: uppercase;
-}
+
 .aligned-text {
     display: block;
     width: 286px;
@@ -184,11 +172,33 @@ body {
 }
 
 .aligned-text_center {
-    /* стили для центрального слова — другие отступы */
+    display: block;
+    width: 339px;
+    height: 115px;
+    margin-top: 300px;
+    margin-left: 380.5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .aligned-text_right {
-    /* стили для правого слова */
+    display: block;
+    width: 387px;
+    height: 115px;
+    margin-top: 435px;
+    margin-left: 663px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    letter-spacing: 0.3em;      /* 30% от 100px */
+    text-align: right;           /* выравнивание по правому краю */
+    text-transform: uppercase;
 }
 
 .cover__description {
