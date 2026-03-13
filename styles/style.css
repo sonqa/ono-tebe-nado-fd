@@ -323,15 +323,63 @@ body {
     background-image: url('../images/card-lot-03.jpg');
 }
 
+/* Заголовки карточек */
 .card__title {
-    font-size: 24px;
+    position: relative;
+    width: 254px;
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: white;
+    z-index: 2;
 }
 
+.card_type_film .card__title {
+    margin-top: 48px;
+    height: 82px;
+}
+
+.card_type_book .card__title {
+    margin-top: 48px;
+    height: 110px;
+}
+
+.card_type_picture .card__title {
+    margin-top: 48px;
+    height: 110px;
+}
+
+/* Тексты карточек */
 .card__text {
-    font-size: 16px;
-    line-height: 1.5;
+    position: relative;
+    width: 254px;
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: white;
+    z-index: 2;
+}
+
+.card_type_film .card__text {
+    margin-top: 404px;
+    height: 144px;
+}
+
+.card_type_book .card__text {
+    margin-top: 188px;
+    height: 360px;
+}
+
+.card_type_picture .card__text {
+    margin-top: 284px;
+    height: 264px;
 }
 
 .lots__look-more-link {
