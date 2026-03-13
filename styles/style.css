@@ -247,23 +247,23 @@ body {
 }
 
 /* ===== ЛОТЫ ===== */
+
 .lots {
     width: 1052px;
-    height: 723px;
     margin: 0 auto;
-    margin-top: 180px;        /* отступ после cover */
-    padding: 0 24px;
+    margin-top: 180px;
+    padding: 0;
 }
 
 .lots__heading {
     width: 121px;
     height: 47px;
-    margin-left: 40px;        /* отступ слева */
+    margin-left: 40px;
+    margin-bottom: 50px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 1;            /* 100% = 1 */
-    letter-spacing: normal;    /* 0% */
+    line-height: 1;
     text-transform: uppercase;
     color: #000000;
 }
@@ -285,17 +285,16 @@ body {
     color: inherit;
 }
 
+/* ===== КАРТОЧКИ ===== */
 .card {
     position: relative;
     width: 334px;
     height: 596px;
-    margin-top: 74px;          /* отступ от заголовка */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px 30px;
-    color: white;
     border-radius: 20px;
+    color: white;
     z-index: 1;
 }
 
@@ -311,6 +310,7 @@ body {
     z-index: -1;
 }
 
+/* Фоновые изображения */
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
 }
@@ -341,17 +341,14 @@ body {
 
 .card_type_film .card__title {
     margin-top: 48px;
-    height: 82px;
 }
 
 .card_type_book .card__title {
     margin-top: 48px;
-    height: 110px;
 }
 
 .card_type_picture .card__title {
     margin-top: 48px;
-    height: 110px;
 }
 
 /* Тексты карточек */
@@ -369,37 +366,37 @@ body {
 
 .card_type_film .card__text {
     margin-top: 404px;
-    height: 144px;
 }
 
 .card_type_book .card__text {
     margin-top: 188px;
-    height: 360px;
 }
 
 .card_type_picture .card__text {
     margin-top: 284px;
-    height: 264px;
 }
 
+/* Ссылка "посмотреть больше" */
 .lots__look-more-link {
     display: inline-block;
     width: 192px;
-    height: 25px;
+    height: 23px;
     margin-top: 700px;
     margin-left: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 1;
     color: #000000;
     text-decoration: underline;
     text-underline-offset: 4px;
 }
 
 .lots__look-more-link:hover {
-    text-decoration: none;  /* убираем подчёркивание при наведении (опционально) */
+    text-decoration: none;
 }
+
+/* Линия под ссылкой */
 .lots__line {
     width: 191px;
     height: 0;
