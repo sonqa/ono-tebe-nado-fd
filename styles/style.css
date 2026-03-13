@@ -248,22 +248,32 @@ body {
 
 /* ===== ЛОТЫ ===== */
 .lots {
-    max-width: 1100px;
+    width: 1052px;
+    height: 723px;
     margin: 0 auto;
-    padding: 0 50px 100px;
+    margin-top: 180px;        /* отступ после cover */
+    padding: 0 24px;
 }
 
 .lots__heading {
-    font-size: 40px;
+    width: 121px;
+    height: 47px;
+    margin-left: 40px;        /* отступ слева */
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin-bottom: 50px;
+    font-size: 40px;
+    line-height: 1;            /* 100% = 1 */
+    letter-spacing: normal;    /* 0% */
+    text-transform: uppercase;
+    color: #000000;
 }
 
 .lots__card-list {
     display: flex;
     gap: 30px;
     list-style: none;
-    margin-bottom: 30px;
+    padding: 0 24px;
+    margin: 0;
 }
 
 .lots__card-list-item {
@@ -278,7 +288,8 @@ body {
 .card {
     position: relative;
     width: 334px;
-    height: 757px;
+    height: 596px;
+    margin-top: 74px;          /* отступ от заголовка */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -301,15 +312,15 @@ body {
 }
 
 .card_type_film {
-    background-image: url('../images/card-film.jpg');
+    background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-    background-image: url('../images/card-book.jpg');
+    background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: url('../images/card-picture.jpg');
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -325,9 +336,28 @@ body {
 
 .lots__look-more-link {
     display: inline-block;
+    width: 192px;
+    height: 25px;
+    margin-top: 700px;
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
     font-size: 18px;
-    color: #000;
+    line-height: 25px;
+    color: #000000;
     text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.lots__look-more-link:hover {
+    text-decoration: none;  /* убираем подчёркивание при наведении (опционально) */
+}
+.lots__line {
+    width: 191px;
+    height: 0;
+    margin-top: 725px;
+    margin-left: 40px;
+    border-top: 1px solid #000000;
 }
 
 /* ===== ОБ АУКЦИОНЕ ===== */
