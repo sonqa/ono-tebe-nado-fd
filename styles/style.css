@@ -295,6 +295,8 @@ body {
     background-repeat: no-repeat;
     border-radius: 20px;
     color: white;
+    display: flex;
+    flex-direction: column;
     z-index: 1;
 }
 
@@ -310,24 +312,15 @@ body {
     z-index: -1;
 }
 
-/* Фоновые изображения */
-.card_type_film {
-    background-image: url('../images/card-lot-01.jpg');
-}
-
-.card_type_book {
-    background-image: url('../images/card-lot-02.jpg');
-}
-
-.card_type_picture {
-    background-image: url('../images/card-lot-03.jpg');
-}
-
-/* Заголовки карточек */
-.card__title {
-    position: relative;
+.card__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 48px 0 40px 40px;  /* top 48px, bottom 40px, left 40px */
     width: 254px;
-    margin-left: 40px;
+}
+
+.card__title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -336,44 +329,34 @@ body {
     text-decoration: underline;
     text-underline-offset: 4px;
     color: white;
-    z-index: 2;
-}
-
-.card_type_film .card__title {
-    margin-top: 48px;
-}
-
-.card_type_book .card__title {
-    margin-top: 48px;
-}
-
-.card_type_picture .card__title {
-    margin-top: 48px;
-}
-
-/* Тексты карточек */
-.card__text {
-    position: relative;
+    margin: 0 0 20px 0;  /* отступ снизу 20px */
     width: 254px;
-    margin-left: 40px;
+}
+
+.card__text {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.2;
     color: white;
-    z-index: 2;
+    margin: 0;
+    width: 254px;
 }
 
+/* Индивидуальные отступы для каждой карточки через margin-bottom: auto */
 .card_type_film .card__text {
-    margin-top: 404px;
+    margin-top: auto;           /* прижимает текст к низу */
+    margin-bottom: 0;
 }
 
 .card_type_book .card__text {
-    margin-top: 188px;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .card_type_picture .card__text {
-    margin-top: 284px;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 /* Ссылка "посмотреть больше" */
