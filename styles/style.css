@@ -333,17 +333,11 @@ body {
     text-underline-offset: 4px;
     color: white;
     margin-top: 60px;
-    
+    margin-bottom: 10px;
 }
 
-.card_type_film .card__title {
-    height: auto;
-}
-
-.card_type_book .card__title {
-    height: auto;
-}
-
+.card_type_film .card__title,
+.card_type_book .card__title,
 .card_type_picture .card__title {
     height: auto;
 }
@@ -355,7 +349,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: white;
-    
+    padding-bottom: 10px;
 
 }
 
