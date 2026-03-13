@@ -291,6 +291,8 @@ body {
 
 /* ===== КАРТОЧКИ ===== */
 .card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 334px;
     height: 596px;
@@ -332,15 +334,9 @@ body {
     text-decoration: underline;
     text-underline-offset: 4px;
     color: white;
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin-top: 150px;
 }
 
-.card_type_film .card__title,
-.card_type_book .card__title,
-.card_type_picture .card__title {
-    height: auto;
-}
 
 /* Тексты */
 .card__text {
@@ -349,24 +345,11 @@ body {
     font-size: 20px;
     line-height: 1.2;
     color: white;
-    padding-bottom: 10px;
-
+    margin-top: auto;
+    margin-bottom: 30px;
 }
 
-.card_type_film .card__text {
-    margin-top: 300px;
-    
-}
 
-.card_type_book .card__text {
-    margin-top: 150px;
-    
-}
-
-.card_type_picture .card__text {
-    margin-top: 250px;
- 
-}
 
 /* Фоновые изображения */
 .card_type_film {
