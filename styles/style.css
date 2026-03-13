@@ -84,32 +84,26 @@ body {
 
 /* Адрес (третья колонка) */
 .address {
-    display: flex;
-    flex-direction: column;   /* колонка */
-    align-items: flex-start;  /* ← выравнивание по левому краю */
-    gap: 5px;                 /* расстояние между строками */
+    position: absolute;
+    top: 95px;
+    left: 810px;
+    width: 240px;
+    height: 98px;
     font-style: normal;
-    text-align: left;         /* ← тоже по левому краю */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
 }
 
 .address a,
 .address span {
-    display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 24.3px;
     color: #000000;
     text-decoration: none;
-}
-
-.address a {
-    white-space: nowrap;
-}
-
-.address span {
-    margin-top: 4px;
-    white-space: normal;
+    line-height: 1.4;
 }
 
 .address a:hover {
