@@ -41,16 +41,16 @@ body {
 
 .header__menu {
     position: absolute;
-    top: 138px;
+    top: 136px;
     left: 50px;
 }
 .header__links-list-item:nth-child(2) {
-    transform: translate(-5px, 2px);   /* левее 5px, ниже 2px */
+    transform: translate(-6px, -1px);   /* левее 5px, ниже 2px */
 }
 
 /* Сдвигаем третий пункт (об аукционе) */
 .header__links-list-item:nth-child(3) {
-    transform: translate(-8px, 2px);   /* левее 8px, ниже 2px */
+    transform: translate(-9px, -1px);   /* левее 8px, ниже 2px */
 }
 
 .header__links-list {
@@ -110,7 +110,7 @@ body {
 /* Адрес (третья колонка) */
 .address {
     position: absolute;
-    top: 95px;
+    top: 100px;
     left: 810px;
     width: 240px;
     height: 98px;
@@ -247,7 +247,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
-    word-spacing: 12px;      /* подбери нужное значение */
+    word-spacing: 20px;      /* подбери нужное значение */
 }
 
 /* Кнопка */
@@ -363,7 +363,7 @@ body {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     color: white;
-    margin-top: 35px;
+    margin-top: 45px;
     
 }
 
@@ -376,19 +376,9 @@ body {
     line-height: 1.2;
     color: white;
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
 }
-.card_type_book .card__text {
-    width: 254px;
-    margin-top: 188px;
-    margin-left: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
-    color: white;
-    height: auto;
-}
+
 
 
 /* Фоновые изображения */
