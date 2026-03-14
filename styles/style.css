@@ -477,7 +477,7 @@ body {
 
 .about__text {
     width: 688px;            /* ширина текста 688px */
-    margin-top: 150px;        /* отступ сверху 150px */
+    margin-top: 120px;        /* отступ сверху 150px */
     color: #000000;
 }
 
@@ -511,7 +511,8 @@ body {
 .footer .address,
 .footer .address a,
 .footer .address span {
-    color: #000000 !important;                    /* ЧЁРНЫЙ текст */
+    color: #000000 !important;
+    margin-top: 0;                     /* ЧЁРНЫЙ текст */
 }
 
 .footer .address {
@@ -558,7 +559,7 @@ body {
 }
 
 .footer__menu-list-item {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .footer__menu-list-item a {
