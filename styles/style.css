@@ -420,14 +420,13 @@ body {
 
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
-    position: relative;        /* или relative */
-    top: 2073px;               /* отступ от верха body */
+    position: absolute;
+    top: 2073px;
     width: 1052px;
     height: 595px;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     background-color: white;
-     
 }
 
 .about__column:first-child {
@@ -466,21 +465,23 @@ body {
 .about__title {
     width: 291px;
     height: 47px;
-    margin-top: 3px;           
-    margin-bottom: 30px;        
+    margin-top: 3px;
+    margin-bottom: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 1;             
+    line-height: 1;
     text-transform: uppercase;
     color: #000000;
 }
+
 .about__text {
     width: 693px;
     height: 312px;
-    margin-top: 150;              /* убираем лишний отступ, если top уже задан */
+    margin-top: 150px;
     color: #000000;
 }
+
 .about__text p {
     margin-bottom: 20px;
     font-size: 16px;
@@ -496,8 +497,13 @@ body {
     height: 180px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;        /* прижимаем всё к верху */
+    padding: 20px 50px 0 50px;      /* отступ сверху 20px */
+    box-sizing: border-box;
 }
 
 /* ===== БЛОК АДРЕСА ===== */
@@ -507,7 +513,7 @@ body {
     left: 50px;
     width: 264.57px;
     height: 98px;
-    color: #ffffff;
+    color: #000000;
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -517,7 +523,7 @@ body {
 
 .footer .address a,
 .footer .address span {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -541,11 +547,12 @@ body {
 
 /* ===== МЕНЮ В ПОДВАЛЕ ===== */
 .footer__menu {
-    position: absolute;
-    top: 40px;
-    left: 468.6px;
-    width: 163.9px;
-    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    /* прижимаем к верху */
+    align-items: center;            /* центрируем по горизонтали */
+    height: 100%;
+    margin-top: 0;
 }
 
 .footer__menu ul {
@@ -581,7 +588,7 @@ body {
 }
 
 .footer__menu-list-item a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -599,14 +606,12 @@ body {
 
 /* ===== СОЦИАЛЬНЫЕ СЕТИ ===== */
 .footer__social-list {
-    position: absolute;
-    top: 40px;
-    right: 50px;
     display: flex;
     gap: 48px;
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: flex-start; 
 }
 
 .footer__social-list-item {
