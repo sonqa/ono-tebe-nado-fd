@@ -112,7 +112,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 2px;
 }
 
 .address a,
@@ -123,11 +123,17 @@ body {
     font-size: 18px;
     color: #000000;
     text-decoration: none;
-    line-height: 1.4;
+    line-height: 1.2;
+}
+
+.address a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .address a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 
