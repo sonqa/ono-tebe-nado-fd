@@ -247,7 +247,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
-    word-spacing: 20px;      /* подбери нужное значение */
+    word-spacing: 18px;      /* подбери нужное значение */
 }
 
 /* Кнопка */
@@ -363,7 +363,7 @@ body {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     color: white;
-    margin-top: 45px;
+    margin-top: 48px;
     
 }
 
@@ -376,7 +376,7 @@ body {
     line-height: 1.2;
     color: white;
     margin-top: auto;
-    margin-bottom: 52px;
+    margin-bottom: 45px;
 }
 
 
@@ -397,7 +397,7 @@ body {
 /* ===== ССЫЛКА ===== */
 .lots__look-more-link {
     position: absolute;
-    top: 710px;
+    top: 705px;
     left: 40px; /* 40px + 24px отступа */
     width: 192px;
     height: 23px;
@@ -418,15 +418,13 @@ body {
 
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
+    position: relative;
     width: 1052px;
     height: 595px;
     margin: 0 auto;
-    margin-top: 300px;           /* отступ после lots */
-    padding: 0 50px 0 24px;
-    display: flex;
-    gap: 0px;
+    margin-top: 300px;
     background-color: white;
-     position: relative;
+     
 }
 
 .about__column:first-child {
