@@ -52,15 +52,26 @@ body {
 .header__links-list {
     display: flex;
     list-style: none;
-    gap: 20px;              /* расстояние между пунктами */
+    gap: 15px;
     padding: 0;
     margin: 0;
+    align-items: center;
 }
 
 .header__links-list-item {
     display: flex;
     align-items: center;
-    gap: 5px;                /* расстояние между кружком и словом */
+}
+
+/* Кружок между пунктами (кроме последнего) */
+.header__links-list-item:not(:last-child)::after {
+    content: "○";
+    display: inline-block;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1;
+    margin-left: 15px;
+    vertical-align: middle;
 }
 
 .header__links-list-item a {
@@ -74,17 +85,9 @@ body {
 }
 
 .header__links-list-item_active a {
-    text-decoration: none;              /* убираем подчёркивание */
+    text-decoration: none;
 }
 
-/* Добавляем полый кружок перед каждым пунктом, кроме первого */
-.header__links-list-item:not(:first-child)::before {
-    content: "○";
-    display: inline-block;
-    color: #000000;
-    font-size: 18px;
-    line-height: 1;
-}
 
 /* Логотип */
 .header__logo {
@@ -104,7 +107,7 @@ body {
 /* Адрес (третья колонка) */
 .address {
     position: absolute;
-    top: 95px;
+    top: 100px;
     left: 810px;
     width: 240px;
     height: 98px;
@@ -241,7 +244,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     margin: 0;
-    word-spacing: 4px;      /* подбери нужное значение */
+    word-spacing: 8px;      /* подбери нужное значение */
 }
 
 /* Кнопка */
@@ -306,6 +309,13 @@ body {
 .lots__card-list-item {
     width: 334px;
 }
+.lots__card-list-item:nth-child(2) {
+    margin-left: -5px;    /* вторая карточка левее */
+}
+
+.lots__card-list-item:nth-child(3) {
+    margin-left: -10px;   /* третья ещё левее */
+}
 
 /* ===== КАРТОЧКИ ===== */
 .card {
@@ -348,8 +358,9 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
     text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
     color: white;
-    margin-top: 50px;
+    margin-top: 40px;
     
 }
 
@@ -383,7 +394,7 @@ body {
 /* ===== ССЫЛКА ===== */
 .lots__look-more-link {
     position: absolute;
-    top: 700px;
+    top: 710px;
     left: 40px; /* 40px + 24px отступа */
     width: 192px;
     height: 23px;
@@ -394,6 +405,7 @@ body {
     color: #000000;
     text-decoration: underline;
     text-underline-offset: 4px;
+    text-decoration-thickness: 1px; 
 }
 
 .lots__look-more-link:hover {
