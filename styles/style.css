@@ -317,13 +317,14 @@ body {
 }
 
 .lots__card-list-item:nth-child(3) {
-    margin-left: -8px;   /* третья ещё левее */
+    margin-left: -5px;   /* третья ещё левее */
 }
 
 /* ===== КАРТОЧКИ ===== */
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;  /* распределяет пространство */
     position: relative;
     width: 334px;
     height: 596px;
@@ -436,18 +437,20 @@ body {
 }
 
 .about__logo {
+    position: relative;
     width: 240px;
     height: 240px;
     background-color: #000;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .about__logo img {
-    width: 120px;
-    height: auto;
+    position: absolute;
+    top: 64px;
+    left: 46.48px;
+    width: 148px;
+    height: 114px;
+    object-fit: contain;
 }
 
 .about__column:last-child {
