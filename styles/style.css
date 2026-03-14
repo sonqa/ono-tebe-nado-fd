@@ -491,6 +491,7 @@ body {
 }
 
 /* ===== ПОДВАЛ ===== */
+/* ===== ПОДВАЛ ===== */
 .footer {
     position: absolute;
     top: 2848px;
@@ -498,51 +499,51 @@ body {
     height: 180px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #000000;        /* чёрный фон */
-    color: #ffffff;                    /* белый текст по умолчанию */
+    background-color: #ffffff !important;        /* БЕЛЫЙ фон */
+    color: #000000 !important;                    /* ЧЁРНЫЙ текст */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px 50px;
     box-sizing: border-box;
 }
 
-/* ===== БЛОК АДРЕСА ===== */
+/* ===== АДРЕС ===== */
+.footer .address,
+.footer .address a,
+.footer .address span {
+    color: #000000 !important;                    /* ЧЁРНЫЙ текст */
+}
+
 .footer .address {
     width: 264px;
-    color: #ffffff;                    /* белый текст */
-    font-style: normal;
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.footer .address a,
-.footer .address span {
-    color: #ffffff;                    /* белые ссылки и текст */
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.2;
+    margin-top: 0;   
 }
 
 .footer .address a {
     text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
-    color: #ffffff;                    /* белые ссылки */
+    color: #000000 !important;
 }
 
 .footer .address span {
     white-space: normal;
-    color: #ffffff;                    /* белый текст */
+    color: #000000 !important;
 }
 
-/* ===== МЕНЮ В ПОДВАЛЕ ===== */
+/* ===== МЕНЮ ===== */
+.footer__menu,
+.footer__menu-list-item,
+.footer__menu-list-item a {
+    color: #000000 !important;                    /* ЧЁРНЫЙ текст */
+}
+
 .footer__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;  
 }
 
 .footer__menu ul {
@@ -557,27 +558,24 @@ body {
 }
 
 .footer__menu-list-item a {
-    color: #ffffff;                    /* белые ссылки меню */
+    color: #000000 !important;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.2;
 }
 
 .footer__menu-list-item_active a {
     text-decoration: underline;
-    text-underline-offset: 4px;
-    color: #ffffff;                    /* белый цвет для активного пункта */
+    color: #000000 !important;
 }
 
-/* ===== СОЦИАЛЬНЫЕ СЕТИ ===== */
+/* ===== СОЦСЕТИ ===== */
 .footer__social-list {
     display: flex;
     gap: 48px;
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: flex-start; 
 }
 
 .footer__social-list-item {
@@ -585,19 +583,8 @@ body {
     height: 48px;
 }
 
-.footer__social-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .footer__social-link img {
     width: 100%;
     height: 100%;
-    filter: invert(1);                 /* делает иконки белыми */
-    transition: opacity 0.2s;
-}
-
-.footer__social-link img:hover {
-    opacity: 0.8;
+    filter: none !important;                      /* убираем invert — иконки чёрные */
 }
