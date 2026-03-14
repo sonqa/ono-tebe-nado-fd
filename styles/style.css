@@ -515,6 +515,8 @@ body {
 }
 
 .footer .address {
+    position: absolute;
+    left: 50px;  
     width: 264px;
     display: flex;
     flex-direction: column;
@@ -540,6 +542,8 @@ body {
 }
 
 .footer__menu {
+    position: absolute;           /* добавляем абсолютное позиционирование */
+    left: 468.6px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,6 +574,8 @@ body {
 
 /* ===== СОЦСЕТИ ===== */
 .footer__social-list {
+    position: absolute;
+    left: 810px;
     display: flex;
     gap: 48px;
     list-style: none;
