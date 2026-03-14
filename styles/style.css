@@ -403,25 +403,33 @@ body {
 
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
+    width: 1052px;
+    height: 595px;
+    margin: 0 auto;
+    margin-top: 300px;           /* отступ после lots */
+    padding: 0 50px 0 24px;
     display: flex;
-    gap: 80px;
-    padding: 50px 50px 100px 50px;
-    background-color: #f9f9f9;
+    gap: 0px;
+    background-color: white;
+     position: relative;
 }
 
-.about__column {
-    flex: 1;
+.about__column:first-child {
+    position: absolute;
+    top: 35px;
+    left: 47px;
+    width: 240px;
+    height: 240px;
 }
 
 .about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    border-radius: 50%;
-    width: 240px;
-    height: 240px;
-    margin: 0 auto;
 }
 
 .about__logo img {
@@ -429,16 +437,37 @@ body {
     height: auto;
 }
 
-.about__title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 30px;
+.about__column:last-child {
+    position: absolute;
+    top: 133px;
+    left: 359px;
+    width: 693px;
+    height: 449px;
 }
 
+.about__title {
+    width: 291px;
+    height: 47px;
+    margin-top: 3px;           /* отступ сверху внутри колонки */
+    margin-bottom: 30px;        /* отступ до текста */
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;             /* 100% = 1 */
+    text-transform: uppercase;
+    color: #000000;
+}
+.about__text {
+    width: 693px;
+    height: 312px;
+    margin-top: 150;              /* убираем лишний отступ, если top уже задан */
+    color: #000000;
+}
 .about__text p {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.6;
+    color: #000000;
 }
 
 /* ===== ПОДВАЛ ===== */
