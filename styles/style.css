@@ -398,7 +398,7 @@ body {
 /* ===== ССЫЛКА ===== */
 .lots__look-more-link {
     position: absolute;
-    top: 705px;
+    top: 708px;
     left: 40px; /* 40px + 24px отступа */
     width: 192px;
     height: 23px;
@@ -419,11 +419,12 @@ body {
 
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
-    position: relative;
+    position: relative;        /* или relative */
+    top: 2073px;               /* отступ от верха body */
     width: 1052px;
     height: 595px;
-    margin: 0 auto;
-    margin-top: 300px;
+    left: 50%;
+    transform: translateX(-50%); 
     background-color: white;
      
 }
@@ -464,12 +465,12 @@ body {
 .about__title {
     width: 291px;
     height: 47px;
-    margin-top: 3px;           /* отступ сверху внутри колонки */
-    margin-bottom: 30px;        /* отступ до текста */
+    margin-top: 3px;           
+    margin-bottom: 30px;        
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    line-height: 1;             /* 100% = 1 */
+    line-height: 1;             
     text-transform: uppercase;
     color: #000000;
 }
