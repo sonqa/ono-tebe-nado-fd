@@ -339,17 +339,7 @@ body {
     margin-top: auto;
     margin-bottom: 30px;
 }
-.card_type_film .card__text {
-    margin-top: 340px;         /* было 300px */
-}
 
-.card_type_book .card__text {
-    margin-top: 180px;         /* было 150px */
-}
-
-.card_type_picture .card__text {
-    margin-top: 260px;         /* было 250px */
-}
 
 
 /* Фоновые изображения */
