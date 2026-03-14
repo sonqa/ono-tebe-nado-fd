@@ -484,6 +484,7 @@ body {
 .about__text p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    white-space: normal;
     font-size: 20px;
     line-height: 24px;        /* высота строки 24px */
     margin-bottom: 30px;       /* отступ между параграфами 30px */
