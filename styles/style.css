@@ -477,7 +477,7 @@ body {
 
 .about__text {
     width: 688px;            /* ширина текста 688px */
-    margin-top: 120px;        /* отступ сверху 150px */
+    margin-top: 100px;        /* отступ сверху 150px */
     color: #000000;
 }
 
@@ -512,12 +512,13 @@ body {
 .footer .address a,
 .footer .address span {
     color: #000000 !important;
-    margin-top: 0;                     /* ЧЁРНЫЙ текст */
+                      /* ЧЁРНЫЙ текст */
 }
 
 .footer .address {
     position: absolute;
     left: 50px;  
+    top: 0;
     width: 264px;
     display: flex;
     flex-direction: column;
@@ -559,18 +560,21 @@ body {
 }
 
 .footer__menu-list-item {
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .footer__menu-list-item a {
-    color: #000000 !important;
-    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;       /* все подчёркнуты */
+    text-underline-offset: 4px;
     font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.2;
 }
 
-.footer__menu-list-item_active a {
-    text-decoration: underline;
-    color: #000000 !important;
+/* Главная — без подчёркивания */
+.footer__menu-list-item:first-child a {
+    text-decoration: none;
 }
 
 /* ===== СОЦСЕТИ ===== */
