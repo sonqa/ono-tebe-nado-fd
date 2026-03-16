@@ -12,33 +12,20 @@
     font-style: normal;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #ffffff;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* ===== ШАПКА ===== */
 .header {
-    position: relative;
     width: 1100px;
-    height: 293px;
     margin: 0 auto;
+    padding: 30px 50px;  /* внутренние отступы */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__menu {
-    position: absolute;
-    top: 136px;
-    left: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .header__links-list {
@@ -88,14 +75,11 @@ body {
 }
 
 .address {
-    position: absolute;
-    top: 100px;
-    left: 810px;
-    width: 240px;
     font-style: normal;
     display: flex;
     flex-direction: column;
     gap: 2px;
+    text-align: right;
 }
 
 .address a {
@@ -106,7 +90,7 @@ body {
     white-space: nowrap;
 }
 
-.address span {
+.address__text {
     color: #000000;
     font-size: 18px;
     white-space: normal;
@@ -116,7 +100,8 @@ body {
 .cover {
     position: relative;
     width: 1100px;
-    height: 757px;
+    padding: 165px 0 51px 50px;
+    min-height: 757px;  /* если нужно минимальное значение */
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
@@ -129,7 +114,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -146,42 +131,40 @@ body {
     color: #ffffff;
 }
 
+.aligned-text {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115px;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 0.3em;
+}
+
 .aligned-text_left {
-    position: absolute;
-    top: 165px;
-    left: 50px;
     width: 286px;
 }
 
 .aligned-text_center {
-    position: absolute;
-    top: 300px;
-    left: 380.5px;
     width: 339px;
+    margin-left: 380.5px;
     text-align: center;
 }
 
 .aligned-text_right {
-    position: absolute;
-    top: 435px;
-    left: 663px;
     width: 387px;
+    margin-left: 663px;
     text-align: right;
 }
 
-.letter-spacing-extended {
-    letter-spacing: 0.3em;
-}
-
 .cover__description {
-    position: absolute;
-    top: 656px;
-    left: 50px;
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1000px;
-    z-index: 2;
 }
 
 .cover__description-text {
@@ -219,27 +202,28 @@ body {
 }
 
 .lots__heading {
-    position: absolute;
-    top: 0;
-    left: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
+    margin-bottom: 74px;
+    margin-left: 40px;
 }
 
 .lots__card-list {
-    position: absolute;
-    top: 74px;
-    left: 0;
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;          /* 1. Разрешаем перенос на новую строку */
+    gap: 30px;                /* 2. Универсальный отступ между элементами */
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .lots__card-list-item {
-    width: 334px;
+    width: 334px;             /* Фиксированная ширина карточки */
+    min-width: 250px;         /* 3. (Опционально) Минимальная ширина для адаптивности */
+    flex-grow: 1;             /* 4. (Опционально) Разрешить карточкам растягиваться */
 }
 
 .card {
@@ -248,14 +232,17 @@ body {
     justify-content: space-between;
     position: relative;
     width: 334px;
-    height: 596px;
+    min-height: 596px;  /* ✅ минимальная высота */
     background-size: cover;
     background-position: center;
     color: white;
+    padding: 48px 40px 45px 40px;
+    word-wrap: break-word;  /* перенос длинных слов */
+    overflow: hidden;  
 }
 
-.card::before {
-    content: '';
+
+.card__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -307,9 +294,8 @@ body {
 }
 
 .lots__look-more-link {
-    position: absolute;
-    top: 708px;
-    left: 40px;
+    display: inline-block;
+    margin-left: 40px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -320,46 +306,43 @@ body {
 
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
-    position: absolute;
-    top: 2073px;
     width: 1052px;
-    height: 595px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 300px auto 0;
+    display: flex;
+    gap: 80px;
     background-color: white;
 }
 
 .about__column:first-child {
-    position: absolute;
-    top: 35px;
-    left: 47px;
     width: 240px;
-    height: 240px;
+    padding-top: 35px;
+    padding-left: 47px;
 }
 
 .about__logo {
-    position: relative;
     width: 240px;
     height: 240px;
     background-color: #000;
     border-radius: 50%;
+
+    /* Включаем Flex и центрируем */
+    display: flex;
+    justify-content: center;  /* Выравнивание по горизонтали */
+    align-items: center;      /* Выравнивание по вертикали */
+
+    /* Убедитесь, что нет лишних position или отступов, которые могут помешать */
+    position: relative; /* если нужно, иначе можно убрать */
 }
 
 .about__logo img {
-    position: absolute;
-    top: 64px;
-    left: 46.48px;
     width: 148px;
     height: 114px;
     object-fit: contain;
 }
 
 .about__column:last-child {
-    position: absolute;
-    top: 133px;
-    left: 359px;
-    width: 693px;
-    height: 449px;
+    flex: 1;
+    padding-top: 133px;
 }
 
 .about__title {
@@ -377,7 +360,7 @@ body {
     color: #000000;
 }
 
-.about__text p {
+.about__paragraph {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -386,14 +369,14 @@ body {
     color: #000000;
 }
 
+.about__paragraph:last-child {
+    margin-bottom: 0;
+}
+
 /* ===== ПОДВАЛ ===== */
 .footer {
-    position: absolute;
-    top: 2848px;
     width: 1100px;
-    height: 180px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 480px auto 0;
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -402,30 +385,13 @@ body {
 }
 
 .footer .address {
-    position: absolute;
-    left: 50px;
-    top: 0;
     width: 264px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    text-align: left;        /* в подвале текст слева */
+    margin: 0;
 }
 
-.footer .address a {
-    text-decoration: underline;
-    color: #000000;
-    font-size: 18px;
-}
-
-.footer .address span {
-    color: #000000;
-    font-size: 18px;
-    white-space: normal;
-}
 
 .footer__menu {
-    position: absolute;
-    left: 468.6px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,21 +413,33 @@ body {
     font-size: 18px;
 }
 
-.footer__menu-list-item:first-child a {
-    text-decoration: none;
+.footer__menu-list-item.active a {
+    text-decoration: none;  /* активная ссылка без подчёркивания */
+}
+
+.footer__menu-list-item a {
+    text-decoration: underline;  /* все остальные подчёркнуты */
+    text-underline-offset: 4px;
 }
 
 .footer__social-list {
-    position: absolute;
-    left: 810px;
     display: flex;
     gap: 48px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .footer__social-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__social-icon {
     width: 48px;
     height: 48px;
+    display: block;
 }
 
 .footer__social-link img {
