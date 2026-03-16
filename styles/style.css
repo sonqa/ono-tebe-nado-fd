@@ -100,12 +100,17 @@
 .cover {
     position: relative;
     width: 1100px;
-    padding: 165px 0 51px 50px;
-    min-height: 757px;  /* если нужно минимальное значение */
+    min-height: 757px; /* Минимальная высота, как в макете, но с возможностью роста */
+    margin: 293px auto 0; /* Отступ сверху 293px, автоматические отступы по бокам для центрирования */
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 165px 0 51px 50px; /* Внутренние отступы для контента */
+    box-sizing: border-box;
 }
 
 .overlay {
@@ -165,6 +170,8 @@
     justify-content: space-between;
     align-items: center;
     width: 1000px;
+    margin-left: 50px;        /* ← добавить отступ слева как у заголовка */
+    margin-top: 50px;         /* ← отступ сверху от заголовка (опционально) */
 }
 
 .cover__description-text {
@@ -195,7 +202,7 @@
 
 /* ===== ЛОТЫ ===== */
 .lots {
-    width: 1052px;
+    width: 1100px;
     margin: 180px auto 0;
     padding-left: 24px;
     position: relative;
@@ -214,7 +221,7 @@
 .lots__card-list {
     display: flex;
     flex-wrap: wrap;          /* 1. Разрешаем перенос на новую строку */
-    gap: 30px;                /* 2. Универсальный отступ между элементами */
+    gap: 25px;                /* 2. Универсальный отступ между элементами */
     list-style: none;
     margin: 0;
     padding: 0;
@@ -229,16 +236,14 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;      /* всё прижато влево */
     position: relative;
     width: 334px;
-    min-height: 596px;  /* ✅ минимальная высота */
+    min-height: 596px;
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 48px 40px 45px 40px;
-    word-wrap: break-word;  /* перенос длинных слов */
-    overflow: hidden;  
+    padding: 0;                   /* убираем внутренние отступы */
 }
 
 
@@ -324,14 +329,9 @@
     height: 240px;
     background-color: #000;
     border-radius: 50%;
-
-    /* Включаем Flex и центрируем */
     display: flex;
-    justify-content: center;  /* Выравнивание по горизонтали */
-    align-items: center;      /* Выравнивание по вертикали */
-
-    /* Убедитесь, что нет лишних position или отступов, которые могут помешать */
-    position: relative; /* если нужно, иначе можно убрать */
+    justify-content: center;
+    align-items: center;
 }
 
 .about__logo img {
@@ -342,7 +342,7 @@
 
 .about__column:last-child {
     flex: 1;
-    padding-top: 133px;
+    padding-top: 0;
 }
 
 .about__title {
@@ -351,7 +351,7 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0;
 }
 
 .about__text {
@@ -382,23 +382,27 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 20px 50px;
+    box-sizing: border-box;
 }
-
 .footer .address {
     width: 264px;
     text-align: left;        /* в подвале текст слева */
     margin: 0;
 }
 
-
 .footer__menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;        /* центрируем по горизонтали */
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .footer__menu ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -434,6 +438,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: auto;                /* убираем фиксированную ширину */
+    height: auto;
 }
 
 .footer__social-icon {
