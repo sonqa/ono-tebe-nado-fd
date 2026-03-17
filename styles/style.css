@@ -26,6 +26,8 @@
 .header__menu {
     display: flex;
     align-items: center;
+    margin-top: 116px;            /* опускаем меню (136px - 20px) */
+    margin-left: 0;
 }
 
 .header__links-list {
@@ -75,6 +77,7 @@
 }
 
 .address {
+    margin-top: 70px;  
     font-style: normal;
     display: flex;
     flex-direction: column;
@@ -109,7 +112,7 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 165px 0 51px 50px; /* Внутренние отступы для контента */
+    padding: 120px 0 51px 50px; /* Внутренние отступы для контента */
     box-sizing: border-box;
 }
 
@@ -203,7 +206,7 @@
 /* ===== ЛОТЫ ===== */
 .lots {
     width: 1100px;
-    margin: 180px auto 0;
+    margin: 120px auto 0;
     padding-left: 24px;
     position: relative;
 }
@@ -312,8 +315,9 @@
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     width: 1052px;
-    margin: 300px auto 0;
+    margin: 200px auto 0;
     display: flex;
+    align-items: flex-start; 
     gap: 80px;
     background-color: white;
 }
@@ -343,6 +347,7 @@
 .about__column:last-child {
     flex: 1;
     padding-top: 0;
+    margin-top: 0;  
 }
 
 .about__title {
@@ -352,11 +357,12 @@
     text-transform: uppercase;
     color: #000000;
     margin: 0 0 30px 0;
+    padding-top: 0;
 }
 
 .about__text {
     width: 688px;
-    margin-top: 100px;
+    margin-top: 0;
     color: #000000;
 }
 
@@ -395,8 +401,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;        /* центрируем по горизонтали */
-    margin-left: 0;
-    margin-right: 0;
+    justify-content: flex-start;
 }
 
 .footer__menu ul {
@@ -428,7 +433,7 @@
 
 .footer__social-list {
     display: flex;
-    gap: 48px;
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -443,8 +448,8 @@
 }
 
 .footer__social-icon {
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     display: block;
 }
 
