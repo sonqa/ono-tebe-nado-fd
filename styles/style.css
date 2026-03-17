@@ -117,7 +117,7 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 160px 0 30px 50px;
+    padding: 180px 0 30px 50px;  /* увеличил верхний отступ до 180px */
     box-sizing: border-box;
 }
 
@@ -135,6 +135,10 @@
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        /* центрируем заголовок */
+    width: 100%;
 }
 
 .cover__title span {
@@ -150,17 +154,21 @@
 
 .aligned-text_left {
     width: 286px;
+    align-self: flex-start;      /* первое слово слева */
+    margin-left: 0;
 }
 
 .aligned-text_center {
     width: 339px;
-    margin-left: 380.5px;
+    align-self: center;          /* второе по центру */
+    margin-left: 0;
     text-align: center;
 }
 
 .aligned-text_right {
     width: 387px;
-    margin-left: 663px;
+    align-self: flex-end;        /* третье справа */
+    margin-left: 0;
     text-align: right;
 }
 
@@ -204,7 +212,7 @@
 /* ===== ЛОТЫ ===== */
 .lots {
     width: 1052px;
-    margin: 140px auto 0;
+    margin: 200px auto 0;        /* увеличил отступ сверху */
     padding-left: 24px;
 }
 
@@ -222,7 +230,7 @@
     justify-content: center;
     gap: 30px;
     list-style: none;
-    margin: 30px 0 0 0;
+    margin: 50px 0 0 0;          /* увеличил отступ сверху */
     padding: 0;
 }
 
@@ -304,7 +312,7 @@
 .lots__look-more-link {
     display: inline-block;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 40px;            /* увеличил отступ сверху */
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -316,7 +324,7 @@
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     width: 1052px;
-    margin: 200px auto 0;
+    margin: 300px auto 0;        /* увеличил отступ сверху */
     display: flex;
     gap: 80px;
     background-color: white;
@@ -377,7 +385,7 @@
 /* ===== ПОДВАЛ ===== */
 .footer {
     width: 1100px;
-    margin: 400px auto 0;
+    margin: 500px auto 0;        /* увеличил отступ сверху */
     background-color: #ffffff;
     color: #000000;
     display: flex;
