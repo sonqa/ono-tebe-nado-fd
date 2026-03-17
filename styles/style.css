@@ -68,6 +68,8 @@
     margin-top: 62px;
     width: 148px;
     height: 105px;
+    display: flex;
+    align-items: center;  
 }
 
 .header__logo img {
@@ -116,7 +118,7 @@
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding: 120px 0 30px 50px;
+    padding: 160px 0 30px 50px;
     box-sizing: border-box;
 }
 
@@ -126,7 +128,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -223,6 +225,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-top: 30px;   
 }
 
 .lots__card-list-item {
@@ -453,7 +456,7 @@
 }
 
 .footer__social-icon {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     display: block;
 }
