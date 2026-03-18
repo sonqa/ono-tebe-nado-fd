@@ -139,8 +139,7 @@ cover__title {
     text-transform: uppercase; 
     color: #ffffff; 
     display: flex;
-    flex-direction: column;    /* слова в колонку */
-    align-items: center;        /* центрируем по горизонтали */
+    flex-direction: column;    /* слова в колонку */       /* центрируем по горизонтали */
     margin-top: 150px;
 
 }
@@ -160,7 +159,7 @@ cover__title {
 
 .aligned-text_left {
     align-self: flex-start;
-    margin-left: 0;
+    margin-left: 50px;
 }
 
 .aligned-text_center {
@@ -171,6 +170,7 @@ cover__title {
 .aligned-text_right {
     align-self: flex-end;
     text-align: right;
+    margin-right: 50px;  
 }
 
 .cover__description { 
@@ -213,7 +213,7 @@ cover__title {
 /* ===== ЛОТЫ ===== */
 .lots { 
     width: 1052px; 
-    margin: 150px auto 0; 
+    margin: 155px auto 0; 
     padding-left: 12px; 
     position: relative; 
 }
@@ -224,7 +224,7 @@ cover__title {
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
-    margin: 20px 0 30px 25px;
+    margin: 30px 0 30px 25px;
 }
 
 .lots__card-list {
@@ -417,14 +417,14 @@ cover__title {
 .footer .address {
     width: 264px;              /* только специфичная ширина */
     margin: 0;
-    margin-left: 35px;
+    margin-left: 40px;
 }
 
 .footer__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .footer__menu ul {
@@ -457,7 +457,7 @@ cover__title {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 35px;
+    margin-right: 40px;
 }
 
 .footer__social-list-item {
