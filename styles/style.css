@@ -148,61 +148,60 @@
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 0.3em;
-    margin-left: 0;              /* общее свойство */
+    max-width: 100%;           /* вместо фиксированной ширины */
+    white-space: nowrap;                /* общее свойство */
 }
 
 .aligned-text_left {
-    width: 286px;
     align-self: flex-start;
+    margin-left: 0;
 }
 
 .aligned-text_center {
-    width: 339px;
     align-self: center;
     text-align: center;
 }
 
 .aligned-text_right {
-    width: 387px;
     align-self: flex-end;
     text-align: right;
 }
 
-.cover__description {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
-    margin-left: 50px;
-    margin-top: 30px;
-}
-
-.cover__description-text {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #ffffff;
-    word-spacing: 18px;
-}
-
-.bet-button {
-    border: 1px solid #ffffff;
-    background: transparent;
-    padding: 12px 32px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.bet-button:hover {
-    background-color: #ffffff;
-    color: #000000;
+.cover__description { 
+    position: absolute; 
+    top: 656px; 
+    left: 50px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 1000px; 
+    z-index: 2; 
+} 
+ 
+.cover__description-text { 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400; 
+    font-size: 22px; 
+    text-transform: uppercase; 
+    color: #ffffff; 
+    word-spacing: 18px; 
+} 
+ 
+.bet-button { 
+    border: 1px solid #ffffff; 
+    background: transparent; 
+    padding: 12px 32px; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400; 
+    font-size: 22px; 
+    text-transform: uppercase; 
+    color: #ffffff; 
+    cursor: pointer; 
+} 
+ 
+.bet-button:hover { 
+    background-color: #ffffff; 
+    color: #000000; 
 }
 
 /* ===== ЛОТЫ ===== */
@@ -250,6 +249,7 @@
      background-size: cover; 
     background-position: center; 
     color: white; 
+    position: relative;
 } 
 
 
@@ -269,28 +269,35 @@
     z-index: 2;
 }
 
-.card__title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    color: white;
-    margin-bottom: 20px;
-    max-width: 254px;
-}
+.card__title { 
+    position: relative; 
+    z-index: 2; 
+    margin-left: 40px; 
+    width: 254px; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+    font-size: 22px; 
+    line-height: 1.2; 
+    text-transform: uppercase; 
+    text-decoration: underline; 
+    text-underline-offset: 4px; 
+    color: white; 
+    margin-top: 48px; 
+} 
+ 
+.card__text { 
+    position: relative; 
+    z-index: 2; 
+    margin-left: 40px; 
+    width: 254px; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 400; 
+    font-size: 20px; 
+    line-height: 1.2; 
+    color: white; 
+    margin-bottom: 45px; 
+} 
 
-.card__text {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
-    color: white;
-    margin-top: auto;
-    max-width: 254px;
-}
 
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
@@ -348,8 +355,13 @@
     display: block;
 }
 
-.about__column:last-child {
-    flex: 1;
+ 
+.about__column:last-child { 
+    position: absolute; 
+    top: 133px; 
+    left: 359px; 
+    width: 693px; 
+    height: 449px; 
 }
 
 .about__title {
@@ -379,16 +391,18 @@
 
 
 /* ===== ПОДВАЛ ===== */
-.footer {
-    width: 1100px;
-    margin: 250px auto 0;        /* уменьшил отступ сверху (footer наверх) */
-    background-color: #ffffff;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px 50px;
-    box-sizing: border-box;
+.footer { 
+    position: absolute; 
+    top: 2848px; 
+    width: 1100px; 
+    height: 180px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #ffffff; 
+    color: #000000; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .footer .address {
