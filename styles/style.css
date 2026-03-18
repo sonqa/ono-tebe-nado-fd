@@ -159,6 +159,7 @@
 .aligned-text_center {
     width: 339px;
     height: 115px;
+    margin-top: 20px;
     margin-left: 380.5px;
     text-align: center;
 }
@@ -166,6 +167,7 @@
 .aligned-text_right {
     width: 387px;
     height: 115px;
+    margin-top: 40px;
     margin-left: 663px;
     text-align: right;
 }
@@ -221,7 +223,7 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
-    margin: 80px 0 30px 25px;
+    margin: 120px 0 30px 25px;
 }
 
 .lots__card-list {
