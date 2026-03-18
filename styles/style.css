@@ -159,7 +159,7 @@
 .aligned-text_center {
     width: 339px;
     height: 115px;
-    margin-top: 300px;
+    margin-top: 150px;
     margin-left: 380.5px;
     text-align: center;
 }
@@ -167,7 +167,7 @@
 .aligned-text_right {
     width: 387px;
     height: 115px;
-    margin-top: 435px;
+    margin-top: 200px;
     margin-left: 663px;
     text-align: right;
 }
@@ -416,7 +416,7 @@
 .footer .address {
     width: 264px;              /* только специфичная ширина */
     margin: 0;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 .footer__menu {
