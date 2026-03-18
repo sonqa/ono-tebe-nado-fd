@@ -242,7 +242,6 @@
     position: relative;
 } 
 
-
 .card__overlay {
     position: absolute;
     top: 0;
@@ -260,8 +259,6 @@
 }
 
 .card__title { 
-    position: relative; 
-    z-index: 2; 
     margin-left: 40px; 
     width: 254px; 
     font-family: 'Raleway', sans-serif; 
@@ -276,8 +273,6 @@
 } 
  
 .card__text { 
-    position: relative; 
-    z-index: 2; 
     margin-left: 40px; 
     width: 254px; 
     font-family: 'Raleway', sans-serif; 
@@ -287,7 +282,6 @@
     color: white; 
     margin-bottom: 45px; 
 } 
-
 
 .card_type_film {
     background-image: url('../images/card-lot-01.jpg');
@@ -381,8 +375,6 @@
     color: #000000; 
 }
 
-
-
 /* ===== ПОДВАЛ ===== */
 .footer { 
     position: absolute; 
@@ -399,8 +391,7 @@
 }
 
 .footer .address {
-    width: 264px;              /* только специфичная ширина */
-    margin: 0;
+    width: 264px;
     margin-left: 45px;
 }
 
@@ -433,13 +424,11 @@
     text-decoration: none;
 }
 
-
 .footer__social-list {
     display: flex;
     gap: 48px;
     list-style: none;
     padding: 0;
-    margin: 0;
     margin-right: 50px;
 }
 
