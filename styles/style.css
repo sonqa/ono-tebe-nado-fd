@@ -63,13 +63,13 @@
     text-decoration: none;
 }
 
-.header__logo {
-    margin-top: 62px;
-    width: 148px;
-    height: 105px;
-    display: flex;
-    align-items: center;  
-}
+.header__logo { 
+    position: absolute; 
+    top: 92px; 
+    left: 478px; 
+    width: 148px; 
+    height: 105px; 
+} 
 
 .header__logo img {
     width: 100%;
@@ -110,15 +110,10 @@
     position: relative;
     width: 1100px;
     min-height: 757px;
-    margin: 0 auto;
-    background-image: url('../images/cover.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    padding: 200px 0 30px 50px;  /* увеличил верхний отступ до 200px (картинка вниз) */
-    box-sizing: border-box;
+    background-image: url('../images/cover.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    color: #ffffff; 
 }
 
 .overlay {
@@ -131,17 +126,20 @@
     z-index: 1;
 }
 
-.cover__title {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
+.cover__title { 
+    position: relative; 
+    z-index: 2; 
+    width: 100%; 
+    height: 100%; 
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700; 
+    font-size: 100px; 
+    line-height: 115px; 
+    text-transform: uppercase; 
+    color: #ffffff; 
 
-.cover__title span {
+}
+.aligned-text {
     display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -150,25 +148,23 @@
     text-transform: uppercase;
     color: #ffffff;
     letter-spacing: 0.3em;
+    margin-left: 0;              /* общее свойство */
 }
 
 .aligned-text_left {
     width: 286px;
     align-self: flex-start;
-    margin-left: 0;
 }
 
 .aligned-text_center {
     width: 339px;
     align-self: center;
-    margin-left: 0;
     text-align: center;
 }
 
 .aligned-text_right {
     width: 387px;
     align-self: flex-end;
-    margin-left: 0;
     text-align: right;
 }
 
@@ -210,10 +206,11 @@
 }
 
 /* ===== ЛОТЫ ===== */
-.lots {
-    width: 1052px;
-    margin: 250px auto 0;        /* увеличил отступ сверху (карточки вниз) */
-    padding-left: 24px;
+.lots { 
+    width: 1052px; 
+    margin: 180px auto 0; 
+    padding-left: 24px; 
+    position: relative; 
 }
 
 .lots__heading {
@@ -250,15 +247,13 @@
     justify-content: space-between;
     width: 334px;
     min-height: 596px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 48px 40px 45px 40px;
-    position: relative;
-}
+     background-size: cover; 
+    background-position: center; 
+    color: white; 
+} 
 
-.card::before {
-    content: '';
+
+.card__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -350,6 +345,7 @@
     width: 148px;
     height: 114px;
     object-fit: contain;
+    display: block;
 }
 
 .about__column:last-child {
@@ -365,8 +361,10 @@
     margin-bottom: 30px;
 }
 
-.about__text {
-    max-width: 688px;
+.about__text { 
+    width: 688px; 
+    margin-top: 100px; 
+    color: #000000; 
 }
 
 .about__text p {
@@ -378,9 +376,7 @@
     color: #000000;
 }
 
-.about__text p:last-child {
-    margin-bottom: 0;
-}
+
 
 /* ===== ПОДВАЛ ===== */
 .footer {
@@ -396,26 +392,8 @@
 }
 
 .footer .address {
-    width: 264px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.footer .address a,
-.footer .address span {
-    color: #000000;
-    font-size: 18px;
-}
-
-.footer .address a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    white-space: nowrap;
-}
-
-.footer .address span {
-    white-space: normal;
+    width: 264px;              /* только специфичная ширина */
+    margin: 0;
 }
 
 .footer__menu {
@@ -443,9 +421,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.footer__menu-list-item:first-child a {
+.footer__menu-list-item.active a {
     text-decoration: none;
 }
+
 
 .footer__social-list {
     display: flex;
