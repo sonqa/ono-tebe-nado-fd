@@ -115,7 +115,7 @@
     background-position: center; 
     color: #ffffff;
     display: flex;
-    margin-top: 75px;
+    margin-top: 73px;
 }
 
 .overlay {
@@ -213,8 +213,8 @@ cover__title {
 /* ===== ЛОТЫ ===== */
 .lots { 
     width: 1052px; 
-    margin: 180px auto 0; 
-    padding-left: 15px; 
+    margin: 150px auto 0; 
+    padding-left: 12px; 
     position: relative; 
 }
 
@@ -224,7 +224,7 @@ cover__title {
     font-size: 40px;
     text-transform: uppercase;
     color: #000000;
-    margin: 20px 0 30px 20px;
+    margin: 20px 0 30px 25px;
 }
 
 .lots__card-list {
@@ -252,7 +252,7 @@ cover__title {
     justify-content: space-between;
     width: 334px;
     min-height: 596px;
-     background-size: cover; 
+    background-size: cover; 
     background-position: center; 
     color: white; 
     position: relative;
@@ -417,14 +417,14 @@ cover__title {
 .footer .address {
     width: 264px;              /* только специфичная ширина */
     margin: 0;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 .footer__menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .footer__menu ul {
@@ -457,7 +457,7 @@ cover__title {
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 35px;
 }
 
 .footer__social-list-item {
