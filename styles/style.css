@@ -306,7 +306,6 @@
 .about {
     position: relative;
     margin-top: 120px;
-    margin-left: 10px;
     width: 1100px;
     display: flex;
     gap: 80px;
@@ -317,7 +316,7 @@
     width: 240px;
     flex-shrink: 0;
     margin-top: 35px;
-    margin-left: 75px;
+    margin-left: 85px;
 }
 
 .about__logo {
