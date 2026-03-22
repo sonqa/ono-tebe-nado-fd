@@ -54,8 +54,8 @@
     justify-content: center;
     width: 148px;
     height: 105px;
-    margin-top: 65px;        /* сдвиг вниз */
-    margin-left: -150px; 
+    margin-top: 65px;
+    margin-left: -150px;
 }
 
 .header__logo img {
@@ -96,15 +96,15 @@
     position: relative;
     width: 1100px;
     min-height: 757px;
-    margin-top: 67px; 
+    margin-top: 67px;
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   /* заголовок вверху, описание внизу */
-    padding: 0 50px 30px 50px;        /* отступы по бокам и снизу */
+    justify-content: space-between;
+    padding: 0 50px 30px 50px;
     box-sizing: border-box;
 }
 
@@ -162,9 +162,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;                     /* вместо 1000px — занимает всю доступную ширину */
-    max-width: 1100px;               /* максимум 1000px */
-    margin: 25px auto;                  /* центрируем, если нужно */
+    width: 100%;
+    max-width: 1100px;
+    margin: 25px auto;
     position: relative;
     z-index: 2;
 }
@@ -210,13 +210,13 @@
     text-transform: uppercase;
     color: #000000;
     position: relative;
-    margin-top: 25px;      
-    margin-left: 65px; 
+    margin-top: 25px;
+    margin-left: 65px;
 }
 
 .lots__card-list {
     display: flex;
-    flex-wrap: wrap;         
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     list-style: none;
@@ -226,7 +226,7 @@
 
 .lots__card-list-item {
     width: 334px;
-    min-width: 280px; 
+    min-width: 280px;
 }
 
 .card-link {
@@ -246,7 +246,6 @@
     color: white;
     position: relative;
 }
-
 
 .card__title,
 .card__text {
@@ -306,20 +305,18 @@
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     position: relative;
-    margin-top: 120px;   
-    margin-left: 15px;              
+    margin-top: 120px;
     width: 1100px;
     display: flex;
     gap: 80px;
     background-color: white;
 }
 
-
 .about__column-logo {
     width: 240px;
     flex-shrink: 0;
-    margin-top: 35px;      
-    margin-left: 55px;      
+    margin-top: 35px;
+    margin-left: 55px;
 }
 
 .about__logo {
@@ -328,9 +325,9 @@
     height: 240px;
     background-color: #000;
     border-radius: 50%;
-    display: flex;            
-    justify-content: center;       
-    align-items: center;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about__logo img {
@@ -340,12 +337,11 @@
     display: block;
 }
 
-
 .about__column-content {
     flex: 1;
     max-width: 693px;
-    margin-top: 133px;  
-    margin-left: -5px;    
+    margin-top: 133px;
+    margin-left: -5px;
 }
 
 .about__title {
@@ -375,7 +371,7 @@
 /* ===== ПОДВАЛ ===== */
 .footer {
     width: 1100px;
-    margin: 135px auto 0;       
+    margin: 135px auto 0;
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -387,7 +383,7 @@
 
 .footer .address {
     width: 264px;
-    margin-top: 5px;      
+    margin-top: 5px;
 }
 
 .footer__menu {
@@ -403,7 +399,6 @@
     margin: 0;
     text-align: center;
 }
-
 
 .footer__menu-list-item a {
     color: #000000;
@@ -421,7 +416,7 @@
     display: flex;
     gap: 48px;
     list-style: none;
-    padding: 0;  
+    padding: 0;
 }
 
 .footer__social-list-item {
@@ -435,4 +430,3 @@
     height: 48px;
     display: block;
 }
-/* ===== ПОДВАЛ ===== */
