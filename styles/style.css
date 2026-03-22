@@ -54,8 +54,8 @@
     justify-content: center;
     width: 148px;
     height: 105px;
-    margin-top: 70px;        /* сдвиг вниз */
-    margin-left: -120px; 
+    margin-top: 65px;        /* сдвиг вниз */
+    margin-left: -140px; 
 }
 
 .header__logo img {
@@ -96,7 +96,7 @@
     position: relative;
     width: 1100px;
     min-height: 757px;
-    margin-top: 80px; 
+    margin-top: 70px; 
     background-image: url('../images/cover.jpg');
     background-size: cover;
     background-position: center;
@@ -200,7 +200,7 @@
 /* ===== ЛОТЫ ===== */
 .lots {
     width: 1100px;
-    margin: 200px auto 0;
+    margin: 180px auto 0;
     position: relative;
 }
 
@@ -221,7 +221,7 @@
     justify-content: center;
     gap: 20px;
     list-style: none;
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
 }
 
@@ -307,7 +307,7 @@
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     position: relative;
-    margin-top: 150px;                 
+    margin-top: 120px;                 
     width: 1100px;
     display: flex;
     gap: 80px;
@@ -374,7 +374,7 @@
 /* ===== ПОДВАЛ ===== */
 .footer {
     width: 1100px;
-    margin: 200px auto 0;       
+    margin: 100px auto 0;       
     background-color: #ffffff;
     color: #000000;
     display: flex;
