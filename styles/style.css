@@ -210,7 +210,7 @@
     text-transform: uppercase;
     color: #000000;
     position: relative;
-    margin-top: 30px;      
+    margin-top: 25px;      
     margin-left: 65px; 
 }
 
@@ -306,7 +306,7 @@
 /* ===== ОБ АУКЦИОНЕ ===== */
 .about {
     position: relative;
-    margin-top: 110px;   
+    margin-top: 125px;   
     margin-left: 15px;              
     width: 1100px;
     display: flex;
@@ -319,7 +319,7 @@
     width: 240px;
     flex-shrink: 0;
     margin-top: 35px;      
-    margin-left: 47px;      
+    margin-left: 55px;      
 }
 
 .about__logo {
@@ -374,7 +374,7 @@
 /* ===== ПОДВАЛ ===== */
 .footer {
     width: 1100px;
-    margin: 140px auto 0;       
+    margin: 145px auto 0;       
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -393,7 +393,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: -15px;
+    margin-left: -20px;
 }
 
 .footer__menu ul {
