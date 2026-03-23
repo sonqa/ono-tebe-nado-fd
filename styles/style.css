@@ -343,7 +343,7 @@
     flex: 1;
     max-width: 693px;
     margin-top: 135px;
-    margin-right: 65px;
+    margin-right: 70px;
     margin-left: 0;
 }
 
@@ -380,13 +380,13 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 50px;
-    min-height: 210px;
+    min-height: 200px;
     box-sizing: border-box;
 }
 
 .footer .address {
     width: 264px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .footer__menu {
