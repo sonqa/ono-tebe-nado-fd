@@ -222,7 +222,7 @@
     justify-content: center;
     gap: 25px;
     list-style: none;
-    margin: 25px 0 0 0;
+    margin: 28px 0 0 0;
     padding: 0;
 }
 
@@ -343,7 +343,7 @@
     flex: 1;
     max-width: 693px;
     margin-top: 135px;
-    margin-right: 70px;
+    margin-right: 80px;
     margin-left: 0;
 }
 
@@ -380,7 +380,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px 50px;
-    min-height: 200px;
+    min-height: 203px;
     box-sizing: border-box;
 }
 
@@ -394,7 +394,7 @@
     flex-direction: column;
     align-items: center;
     margin-right: auto;
-    margin-left: 160px;
+    margin-left: 162px;
 }
 
 .footer__menu ul {
